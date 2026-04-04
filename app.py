@@ -21,4 +21,4 @@ if st.button("Predict Price"):
     input_data = np.array([[income, house_age, rooms, bedrooms, population]])
     prediction = model.predict(input_data)
 
-    st.success(f"Prediction: ${prediction[0]}")
+    st.success(f"Prediction: ${prediction[0]:,.2f}")
